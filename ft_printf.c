@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 12:05:54 by youllah           #+#    #+#             */
-/*   Updated: 2022/11/01 16:28:19 by youllah          ###   ########.fr       */
+/*   Updated: 2022/11/01 19:19:40 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,3 @@ int	ft_printf(const char *s, ...)
 	va_end (ptr);
 	return (num_printed);
 }
-
-// int main()
-// {
-// 	ft_printf("%d", ft_printf("666\n"));
-// }

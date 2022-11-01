@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_base2.c                                  :+:      :+:    :+:   */
+/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 19:26:13 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/31 23:56:32 by youllah          ###   ########.fr       */
+/*   Updated: 2022/11/01 19:48:19 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putnbr_base2(size_t nbr, char *base, int *num_printed)
+void	ft_putnbr_base(size_t nbr, char *base, int *num_printed)
 {
 	size_t	nb;
 	size_t	len;
@@ -23,7 +23,7 @@ void	ft_putnbr_base2(size_t nbr, char *base, int *num_printed)
 		ft_putchar(base[nb], num_printed);
 	else
 	{
-		ft_putnbr_base2(nb / len, base, num_printed);
-		ft_putnbr_base2(nb % len, base, num_printed);
+		ft_putnbr_base(nb / len, base, num_printed);
+		ft_putnbr_base(nb % len, base, num_printed);
 	}
 }
